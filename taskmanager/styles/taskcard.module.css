@@ -1,0 +1,75 @@
+
+
+.taskCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 1rem;
+  }
+  
+  .taskCard.completed {
+    background-color: #d4f5e2;
+  }
+  
+  .taskCard .taskDetails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .taskCard .taskDetails h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .taskCard .taskDetails p {
+    color: #555;
+  }
+  
+  .taskCard .taskDetails .status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .taskCard .taskDetails .status .statusText {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .taskCard .taskDetails .status select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f3f3f3;
+  }
+  
+  .taskCard .deleteButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #f56565;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .taskCard .deleteButton:hover {
+    background-color: #e53e3e;
+  }
+  
+  .taskCard .status .completed {
+    color: #38a169;
+  }
+  
+  .taskCard .status .inProgress {
+    color: #4299e1;
+  }
+  
