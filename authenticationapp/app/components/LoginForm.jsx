@@ -17,20 +17,24 @@ export default function LoginForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await signIn("Credentials", {
+            const res = await signIn("credentials", {
                 email,
                 password,
-                redirect: false,
+                redirect: false, // Prevent automatic redirect to debug the issue
             });
+    
             if (res.error) {
                 setError("Invalid credentials");
                 return;
             }
-            router.replace("dashboard");
+    
+            // Redirect manually to the dashboard after successful sign-in
+            router.push("/dashboard");
         } catch (error) {
-            console.log(error);
+            console.error("Error signing in:", error);
         }
     };
+    
 
     return (
         <div className="flex items-center justify-center min-h-screen bg-gray-50">
