@@ -1,4 +1,4 @@
-![Alt](authenticationapp\image.png)
-![Alt](authenticationapp\up.png)
-![Alt](authenticationapp\dashboard.png)
-![Alt](authenticationapp\reg.png)
+![Alt](image.png)
+![Alt](up.png)
+![Alt](dashboard.png)
+![Alt](reg.png)
