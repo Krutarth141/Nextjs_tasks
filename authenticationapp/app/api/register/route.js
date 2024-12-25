@@ -18,8 +18,6 @@ export async function POST(req) {
             );
         }
 
-        // Register the user (e.g., save to database)
-        // For example: await saveUserToDatabase(name, email, password);
 
         return NextResponse.json({ message: "User registered" }, { status: 201 });
     } catch (error) {
